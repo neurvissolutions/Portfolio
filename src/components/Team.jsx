@@ -42,8 +42,8 @@ const Team = () => {
     {
       name: "Shanmukh Chinnakotla",
       role: "Marketing | Full Stack Developer",
-      image: "/Shanmukh.jpg",
-      
+      image: "/shanmukh.jpg",
+
       bio: "Data-driven marketing expert with proven track record of growing businesses through innovative digital strategies and analytics.",
       skills: ["Content Strategy", "Social Media", "JavaScript", "React.js", "Node.js"],
       social: {
