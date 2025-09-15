@@ -23,7 +23,7 @@ const Projects = () => {
       category: "AI + Healthcare",
       color: "from-teal-500 to-green-500",
       githubUrl: "https://github.com/jaishnaviinturi/OcuScan-Hybrid_Model_for_Disease_Detection",
-      liveUrl: ""
+      // liveUrl: ""
     },
     {
       id: 3,
@@ -45,7 +45,7 @@ const Projects = () => {
       category: "Blockchain + Full Stack",
       color: "from-orange-500 to-red-500",
       githubUrl: "https://github.com/sriraghavi22/farm2fork",
-      liveUrl: ""
+      // liveUrl: ""
     },
     {
       id: 5,
