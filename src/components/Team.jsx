@@ -6,7 +6,7 @@ const Team = () => {
     {
       name: "Jaishnavi Inturi",
       role: "ML & DL | Full Stack Developer | App Developer",
-      image: "/jaishnavi.jpg", // LinkedIn profile image
+      image: "/raghavi.jpg", // LinkedIn profile image
       bio: "CSE (Data Science) undergrad at BVRIT with strong expertise in Java, Python, Data Science & ML. Passionate about building scalable solutions in AI, Web, and Game Development. 9.38 CGPA achiever with hackathon wins.",
       skills: ["Java", "Python", "React.js", "Data Science", "Machine Learning"],
       social: {
