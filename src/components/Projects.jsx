@@ -16,14 +16,14 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: "Smart Healthcare Mobile App",
-      description: "Cross-platform mobile application for healthcare providers with AI diagnosis assistance, patient management, and telemedicine features.",
-      image: "/career.png",
-      technologies: ["React Native", "Python", "PyTorch", "Firebase"],
-      category: "Mobile + AI",
+      title: "AI-Powered Eye Disesase Detection",
+      description: "AI-powered tool for detecting ocular diseases from fundus images using a hybrid VGG-ResNet deep learning model. Built with React, Flask, and TensorFlow.",
+      image: "/eye.jpg",
+      technologies: ["React", "TypeScript", "Flask", "TensorFlow", "Tailwind CSS"],
+      category: "AI + Healthcare",
       color: "from-teal-500 to-green-500",
-      githubUrl: "https://github.com/neurvis/healthcare-app",
-      liveUrl: "https://healthcare.neurvis.com"
+      githubUrl: "https://github.com/jaishnaviinturi/OcuScan-Hybrid_Model_for_Disease_Detection",
+      liveUrl: ""
     },
     {
       id: 3,
