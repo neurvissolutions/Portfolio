@@ -6,29 +6,39 @@ const Contact = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email Us",
-      content: "hello@neurvis.com",
+      content: "neurvis.solutions@gmail.com",
       subContent: "We'll respond within 24 hours",
       color: "text-teal-600"
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Call Us",
-      content: "+1 (555) 123-4567",
-      subContent: "Mon-Fri 9AM-6PM EST",
+      content: "+91 7386876688",
+      subContent: "Mon-Fri 9AM-6PM IST",
       color: "text-blue-600"
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: "Visit Us",
-      content: "San Francisco, CA",
+      content: "Hyderabad, India",
       subContent: "Remote-first with global reach",
       color: "text-orange-500"
     }
   ];
 
+  // Smooth scroll helper
+  const handleScroll = (e, targetId) => {
+    e.preventDefault();
+    const target = document.querySelector(targetId);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section id="contact" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Heading */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Let's Start{" "}
@@ -75,34 +85,23 @@ const Contact = () => {
                   Why Choose Neurvis?
                 </h4>
                 <div className="space-y-3">
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="w-5 h-5 text-teal-600" />
-                    <span className="text-gray-700">
-                      Free initial consultation
-                    </span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="w-5 h-5 text-teal-600" />
-                    <span className="text-gray-700">24/7 project support</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="w-5 h-5 text-teal-600" />
-                    <span className="text-gray-700">
-                      Agile development process
-                    </span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="w-5 h-5 text-teal-600" />
-                    <span className="text-gray-700">
-                      Post-launch maintenance
-                    </span>
-                  </div>
+                  {[
+                    "Free initial consultation",
+                    "24/7 project support",
+                    "Agile development process",
+                    "Post-launch maintenance"
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-center space-x-3">
+                      <CheckCircle className="w-5 h-5 text-teal-600" />
+                      <span className="text-gray-700">{item}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Replaced Form with Let’s Collaborate */}
+          {/* Collaborate CTA */}
           <div className="lg:col-span-2">
             <div className="bg-gradient-to-r from-teal-600 to-blue-900 rounded-3xl p-10 md:p-16 text-white shadow-xl text-center">
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -133,10 +132,16 @@ const Contact = () => {
               results on time and within budget.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-teal-600 px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+              <button
+                onClick={(e) => handleScroll(e, "#contact")}
+                className="bg-white text-teal-600 px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
+              >
                 Schedule Free Consultation
               </button>
-              <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-teal-600 transition-all duration-300">
+              <button
+                onClick={(e) => handleScroll(e, "#home")}
+                className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-teal-600 transition-all duration-300"
+              >
                 View Our Portfolio
               </button>
             </div>

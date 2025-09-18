@@ -188,19 +188,7 @@ const Team = () => {
           </div>
         </div>
 
-        {/* Join Team CTA */}
-        <div className="text-center mt-16">
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">
-            Want to Join Our Amazing Team?
-          </h3>
-          <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-            We're always looking for talented individuals who share our passion 
-            for innovation and excellence.
-          </p>
-          <button className="bg-gradient-to-r from-teal-600 to-blue-900 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
-            View Open Positions
-          </button>
-        </div>
+       
       </div>
     </section>
   );

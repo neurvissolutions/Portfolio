@@ -9,10 +9,12 @@ const handleScroll = (e, href) => {
   }
 };
 
-
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-teal-50 pt-16">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-teal-50 pt-16"
+    >
       {/* Background Pattern */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-teal-200 to-blue-200 rounded-full opacity-20 blur-3xl"></div>
@@ -36,6 +38,7 @@ const Hero = () => {
               </div>
             </div>
 
+            {/* Headline */}
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
               <span className="text-emerald-700">Innovation</span> Meets{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-teal-600">
@@ -43,11 +46,20 @@ const Hero = () => {
               </span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
-              From cutting-edge AI solutions to full-stack development, we transform ideas into
-              digital realities that drive your business forward.
+            {/* Sub-headline */}
+            <p className="text-xl md:text-2xl text-gray-700 mb-6 leading-relaxed">
+              From AI-powered solutions to full-stack development,{' '}
+              <span className="font-semibold text-teal-700">Neurvis</span> turns
+              bold ideas into scalable digital realities.
             </p>
 
+            {/* Supporting Line */}
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              Your all-tech partner for startups, SMEs & visionary businesses —
+              web, mobile, AI/ML, UI/UX, DevOps & more, all under one roof.
+            </p>
+
+            {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-12">
               <button
                 onClick={(e) => handleScroll(e, '#contact')}
@@ -66,46 +78,27 @@ const Hero = () => {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-2 gap-8">
-              <div className="text-center lg:text-left">
-                <div className="text-3xl font-bold text-blue-900">50+</div>
-                <div className="text-gray-600">Projects Delivered</div>
-              </div>
-              <div className="text-center lg:text-left">
-                <div className="text-3xl font-bold text-teal-600">95%</div>
-                <div className="text-gray-600">Client Satisfaction</div>
-              </div>
-              <div className="text-center lg:text-left">
-                <div className="text-3xl font-bold text-orange-500">24/7</div>
-                <div className="text-gray-600">Support Available</div>
-              </div>
-              <div className="text-center lg:text-left">
-                <div className="text-3xl font-bold text-blue-900">3+</div>
-                <div className="text-gray-600">Years Experience</div>
-              </div>
-            </div>
+            
           </div>
 
           {/* Right Logo */}
-          {/* Right Logo */}
-{/* Right Logo */}
-<div className="flex justify-center lg:justify-end">
-  <div className="relative">
-    {/* Background circle with shadow */}
-    <div className="w-96 h-96 bg-gradient-to-br from-blue-50 to-teal-50 rounded-full flex items-center justify-center shadow-2xl animate-pulse overflow-hidden">
-      {/* Your Logo */}
-      <img
-        src="/neurvis.logo.jpeg"
-        alt="Neurvis Logo"
-        className="w-180 h-180 object-cover"
-      />
-    </div>
+          <div className="flex justify-center lg:justify-end">
+            <div className="relative">
+              {/* Background circle with shadow */}
+              <div className="w-96 h-96 bg-gradient-to-br from-blue-50 to-teal-50 rounded-full flex items-center justify-center shadow-2xl animate-pulse overflow-hidden">
+                {/* Your Logo */}
+                <img
+                  src="/Neurvis-Logo.jpeg"
+                  alt="Neurvis Logo"
+                  className="w-180 h-180 object-cover"
+                />
+              </div>
 
-    {/* Decorative ping elements */}
-    <div className="absolute -top-4 -right-4 w-8 h-8 bg-orange-500 rounded-full opacity-60 animate-ping"></div>
-    <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-teal-600 rounded-full opacity-60 animate-ping animation-delay-1000"></div>
-  </div>
-</div>
+              {/* Decorative ping elements */}
+              <div className="absolute -top-4 -right-4 w-8 h-8 bg-orange-500 rounded-full opacity-60 animate-ping"></div>
+              <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-teal-600 rounded-full opacity-60 animate-ping animation-delay-1000"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

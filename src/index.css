@@ -84,3 +84,8 @@ code {
     @apply bg-background text-foreground;
     }
 }
+/* Flip card helpers */
+.backface-hidden {
+  backface-visibility: hidden;
+}
+

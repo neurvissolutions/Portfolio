@@ -101,24 +101,6 @@ const Services = () => {
           ))}
         </div>
 
-        {/* CTA Section */}
-        <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-teal-600 to-blue-900 rounded-3xl p-8 md:p-12 text-white">
-            <h3 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to Transform Your Ideas?
-            </h3>
-            <p className="text-xl opacity-90 mb-8 max-w-2xl mx-auto">
-              Let's discuss how our expertise can accelerate your business growth 
-              and bring innovative solutions to your challenges.
-            </p>
-            <button
-  onClick={(e) => handleScroll(e, '#contact')}
-  className="bg-white text-teal-600 px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
->
-  Get Free Consultation
-</button>
-          </div>
-        </div>
       </div>
     </section>
   );

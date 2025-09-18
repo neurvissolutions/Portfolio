@@ -57,15 +57,15 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-teal-400" />
-                <span className="text-gray-300">hello@neurvis.com</span>
+                <span className="text-gray-300">neurvis.solutions@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-teal-400" />
-                <span className="text-gray-300">+1 (555) 123-4567</span>
+                <span className="text-gray-300">+91 7386876688</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4 text-teal-400" />
-                <span className="text-gray-300">San Francisco, CA</span>
+                <span className="text-gray-300">Hyderabad, India</span>
               </div>
             </div>
           </div>
@@ -122,31 +122,8 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Newsletter Signup */}
-        <div className="border-t border-gray-800 pt-12 mb-12">
-          <div className="max-w-2xl mx-auto text-center">
-            <h3 className="text-2xl font-bold text-white mb-4">
-              Stay Updated with Our Latest Insights
-            </h3>
-            <p className="text-gray-300 mb-6">
-              Get the latest news, project updates, and tech insights delivered to your inbox.
-            </p>
-            <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-3 rounded-full bg-gray-800 text-white border border-gray-700 focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-200"
-              />
-              <button
-                type="submit"
-                className="bg-gradient-to-r from-teal-500 to-blue-600 text-white px-8 py-3 rounded-full font-medium hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200"
-              >
-                Subscribe
-              </button>
-            </form>
-          </div>
-        </div>
-
+        
+          
         {/* Social Links & Copyright */}
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
