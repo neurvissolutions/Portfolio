@@ -1,5 +1,5 @@
 import React from 'react';
-import { Linkedin, Github, Twitter } from 'lucide-react';
+import { Linkedin, Github } from 'lucide-react';
 
 const Team = () => {
   const teamMembers = [
@@ -12,19 +12,19 @@ const Team = () => {
       social: {
         linkedin: "https://www.linkedin.com/in/jaishnavi-inturi",
         github: "https://github.com/jaishnaviinturi",
-        twitter: "#"
+        
       }
     },
     {
       name: "Kathula Sri Raghavi",
-      role: "ML & DL | Full Developmer",
+      role: "ML & DL | Full Stack Developer",
       image: "/raghavi.jpg", // put raghavi.jpg in your public folder
       bio: "CSE (Data Science) undergrad at BVRIT (9.75 CGPA). Skilled in AI/ML, Web Development, and Data Science. SDE Intern at Blue Cloud Softech, with experience in LLM + RAG pipelines, drug discovery, and scalable web apps. Hackathon winner with projects like Farm2Fork, Career Catalyst, and HoloQuest.",
       skills: ["Python", "Machine Learning", "Web Development", "LLMs", "Databases"],
       social: {
         linkedin: "https://www.linkedin.com/in/kathula-sri-raghavi",
         github: "https://github.com/sriraghavi22",
-        twitter: "#"
+        
       }
     },
     {
@@ -36,7 +36,7 @@ const Team = () => {
       social: {
         linkedin: "https://www.linkedin.com/in/abhijith-reddy-a-/",
         github: "https://github.com/abhijithreddy05",
-        twitter: "#"
+        
       }
     },
     {
@@ -49,7 +49,7 @@ const Team = () => {
       social: {
         linkedin: "https://www.linkedin.com/in/shanmukh-chinnakotla-099778259/",
         github: "https://github.com/Shanmukh1307/Shanmukh1307.github.io",
-        twitter: "#"
+        
       }
     },
     // {

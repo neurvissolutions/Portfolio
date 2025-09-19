@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Linkedin } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,7 +10,7 @@ const Header = () => {
     { name: 'Services', href: '#services' },
     { name: 'Projects', href: '#projects' },
     { name: 'Team', href: '#team' }
-  ]; // Removed Contact
+  ]; // Removed Contact from navItems
 
   // Smooth scroll handler
   const handleScroll = (e, href) => {
@@ -40,7 +40,9 @@ const Header = () => {
                 <span className="text-blue-900">NEUR</span>
                 <span className="text-teal-600">VIS</span>
               </span>
-              <p className="text-xs text-gray-600 -mt-1">Where minds and innovation meet.</p>
+              <p className="text-xs text-gray-600 -mt-1">
+                Where minds and innovation meet.
+              </p>
             </div>
           </div>
 
@@ -56,6 +58,17 @@ const Header = () => {
                 {item.name}
               </a>
             ))}
+
+            {/* LinkedIn Link */}
+            <a
+              href="https://www.linkedin.com/company/neurvis/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-700 hover:text-teal-600 transition-colors duration-200"
+            >
+              <Linkedin size={22} />
+            </a>
+
             <button
               onClick={(e) => handleScroll(e, '#contact')}
               className="bg-gradient-to-r from-teal-600 to-blue-900 text-white px-6 py-2 rounded-full font-medium hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200"
@@ -89,6 +102,18 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
+
+              {/* LinkedIn Link in Mobile */}
+              <a
+                href="https://www.linkedin.com/company/neurvis/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 text-gray-700 hover:text-teal-600 font-medium transition-colors duration-200"
+              >
+                <Linkedin size={20} />
+                <span>LinkedIn</span>
+              </a>
+
               <button
                 onClick={(e) => handleScroll(e, '#contact')}
                 className="w-full bg-gradient-to-r from-teal-600 to-blue-900 text-white px-6 py-2 rounded-full font-medium hover:shadow-lg transition-all duration-200"
